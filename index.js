@@ -8,8 +8,8 @@ app.get('/',(req,res) => {
     res.json({msg: "home"})
 })
 
-app.get('/page',(req,res) => {
-    res.json({msg: "page"})
+app.get('/s',(req,res) => {
+    res.json({msg: "s"})
 })
 
 app.listen(port, () => {
