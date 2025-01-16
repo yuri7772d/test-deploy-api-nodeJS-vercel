@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "version" : 2,
     "builds" : [
@@ -13,3 +14,20 @@
         }
     ]
 }
+=======
+{
+    "version" : 2,
+    "builds" : [
+        {
+            "src": "index.js",
+            "use": "@now/node"
+        }
+    ],
+    "routes":[
+        {
+            "src" : "/(.*)",
+            "dest": "index.js"
+        }
+    ]
+}
+>>>>>>> caa07b80dd863993c9f7f3bfce1e7811d507fafd
