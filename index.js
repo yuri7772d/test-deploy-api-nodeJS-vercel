@@ -65,7 +65,7 @@ app.get("/register", jsonParser, function (req, res, next) {
     }
   );
 } catch (error) {
-    res.json({error})
+  
 }
 });
 
@@ -684,6 +684,7 @@ app.post("/deleteClub", jsonParser, function (req, res, next) {
 
 app.get("/", jsonParser, function (req, res, next) {
   res.json({ msg:"wellcom"});
+  console.log("get home")
 });
 
 
