@@ -683,7 +683,7 @@ app.post("/deleteClub", jsonParser, function (req, res, next) {
 });
 
 app.get("/", jsonParser, function (req, res, next) {
-  res.json({ msg:"wellcom"});
+  res.json({ msg:"wellcom" +process.env.DATABASE_URL});
   console.log("get home")
 });
 
