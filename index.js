@@ -11,7 +11,11 @@ const { log } = require("console");
 const privateKey = "mxvcn21322dfj";
 require('dotenv').config({path: '.env'})
 
-const connection = mysql.createConnection(process.env.DATABASE_URL);
+try{
+const connection = mysql.createConnection(process.env.DATABASE_URL);}
+ catch (error) {
+  
+}
 
 app.use(cors());
 
