@@ -10,9 +10,12 @@ const mysql = require("mysql2");
 const { log } = require("console");
 const privateKey = "mxvcn21322dfj";
 require('dotenv').config({path: '.env'})
+try{
 
 const connection = mysql.createConnection(process.env.DATABASE_URL);
-
+} catch (error) {
+ 
+}
 app.use(cors());
 
 app.post("/register", jsonParser, function (req, res, next) {
